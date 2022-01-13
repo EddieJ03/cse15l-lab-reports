@@ -47,12 +47,19 @@ Then I logged in to see if my file was on the remote server and indeed it was. I
 
 ## Setting An SSH Key
 
-To sgenerate a public and private key I followed the instructions at this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
+To generate a public and private key I followed the instructions at this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
 
-To summarize the steps, I ran the command `ssh-keygen` in terminal which creates a public key and private key in files called **id_ed25519.pub** and **id_ed25519** respectively. I then ssh-ed into my remote server, created a directory called .ssh, logged out, and on my client ran `scp /Users/Edward/.ssh/id_ed25519.pub cs15lwi22anx@ieng6.ucsd.edu:~/.ssh/authorized_keys` to copy the public key only to the remote server. After doing this, I could remotely connect without logging in with my password:
+To summarize the steps, I ran the command `ssh-keygen -t ed25519` in terminal which creates a public key and private key in files called **id_ed25519.pub** and **id_ed25519** respectively. I then ssh-ed into my remote server, created a directory called .ssh, logged out, and on my client ran `scp /Users/Edward/.ssh/id_ed25519.pub cs15lwi22anx@ieng6.ucsd.edu:~/.ssh/authorized_keys` to copy the public key only to the remote server. After doing this, I could remotely connect without logging in with my password:
 
 ![Image](./images/sshnopassword.png)
 
 ---
 
 ## Optimizing Remote Running
+In this part my group and I brainstormed ways to more easily write a command that could copy a local java file to the remote server, compile that file, and run it. Using the idea of semicolons separating commands and needing to re-login after compiling, here is the command my group came up with: <br>
+`scp WhereAmI.java cs15lwi22anx@ieng6.ucsd.edu:~/; ssh cs15lwi22anx@ieng6.ucsd.edu javac WhereAmI.java; ssh cs15lwi22anx@ieng6.ucsd.edu java WhereAmI`
+
+Here is a screenshot of the command working:
+![Image](./images/scp-multi-commands.png)
+
+Notice how it is clearly printing information about the remote server.
