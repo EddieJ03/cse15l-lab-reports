@@ -7,7 +7,7 @@
 ## Heading 2
 
 [Link](https://www.instagram.com/)
-![Image](vscodescreenshot.png)
+![Image](./images/vscodescreenshot.png)
 
 > Blockquote
 
