@@ -11,9 +11,9 @@
 
 > Blockquote
 
-*List
-*List
-*List
+- List
+- List
+- List
 
 1. One
 2. Two
