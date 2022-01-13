@@ -21,7 +21,7 @@
 ## Run Some Commands
 
 
-After ssh-ing into the remtoe server, some commands I ran were:
+After ssh-ing into the remote server, some commands I ran were:
 
 > **cd**: This command allows me to change into a different directory from my current one
 
