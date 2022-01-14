@@ -55,7 +55,7 @@ To summarize the steps, I ran the command `ssh-keygen -t ed25519` in terminal wh
 
 ![Image](./images/sshnopassword.png)
 
-As can be seen from the image, typing I was able to ssh into the remote server without being prompted for a password.
+As can be seen from the image, I was able to ssh into the remote server without being prompted for a password.
 
 ---
 
