@@ -6,12 +6,13 @@
 
 - I went to this [link](https://code.visualstudio.com/download) to download VScode for my machine
 - After downloading I opened the file and followed instructions and left settings as default
-
+- After opening VScode it should look like this:
+![Image](./images/vscodess.png)
 ---
 
 ## Remotely Connecting
 - I first went to this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to make sure I had OpenSSH on my Windows machine then I went to find my course specific account at this [link](https://sdacs.ucsd.edu/~icc/index.php)
-- After I found my course specific account, I then ran the following command in my terminal:
+- After I found my course specific account, I then ran the following command in my terminal (which basically consists of ssh followed by username and @ieng6.ucsd.edu):
 ![Image](./images/remotecnnect.png)
 - However, this yielded a message saying if I was sure I wanted to connect. I typed "yes", hit enter, then typed my password for my school account, and successfully logged in. After logging in successfully, my terminal showed the following:
 ![Image](./images/sshsuccess.png)
@@ -46,12 +47,15 @@ Then I logged in to see if my file was on the remote server and indeed it was. I
 ---
 
 ## Setting An SSH Key
+In this step I set up an SSH key so that I would not have to enter my password every time I connected remotely.
 
 To generate a public and private key I followed the instructions at this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
 
 To summarize the steps, I ran the command `ssh-keygen -t ed25519` in terminal which creates a public key and private key in files called **id_ed25519.pub** and **id_ed25519** respectively. I then ssh-ed into my remote server, created a directory called .ssh, logged out, and on my client ran `scp /Users/Edward/.ssh/id_ed25519.pub cs15lwi22anx@ieng6.ucsd.edu:~/.ssh/authorized_keys` to copy the public key only to the remote server. After doing this, I could remotely connect without logging in with my password:
 
 ![Image](./images/sshnopassword.png)
+
+As can be seen from the image, typing I was able to ssh into the remote server without being prompted for a password.
 
 ---
 
