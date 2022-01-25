@@ -24,13 +24,13 @@
 
 After ssh-ing into the remote server, some commands I ran were:
 
-> **cd**: This command allows me to change into a different directory from my current one
+> `cd`: This command allows me to change into a different directory from my current one
 
-> **ls -a**: This command allows me to show all the files and directories in the current directory, even files and directories than begin with a .
+> `ls -a`: This command allows me to show all the files and directories in the current directory, even files and directories than begin with a .
 
-> **mkdir &lt;name&gt;**: This command creates a new directory with the name specified in the angle brackets
+> `mkdir <name>`: This command creates a new directory with the name specified in the angle brackets
 
-> **pwd**: This command prints the current working directory I am in
+> `pwd`: This command prints the current working directory I am in
 
 Here is a screenshot of the commands being run in terminal:
 ![Image](./images/runningcmmnds.png)
