@@ -13,7 +13,7 @@ The symptom that this failure-inducing input gives is shown below:
 
 The part of the **failure-inducing input** that results in the bug is the last sequence of characters with no valid links. The **bug** in the code is that in each run of the while loop, the index where the parser starts looking for links continuously gets reset to 0 since the closing parenthesis' index is -1 because it does not exist in the last sequence of characters. The **symptom** that results from this bug is an infinite loop which causes an out of memory error. 
 
----
+<hr/>
 
 ## Code Change 2
 
@@ -28,7 +28,7 @@ The symptom that this failure-inducing input gives is shown below:
 
 The part of the **failure-inducing input** that results in the bug is that the string between the parentheses contains spaces. The **bug** in the code is that it does not check for the case that the string between the parentheses contains spaces or not. The **symptom** that results from this bug is that the parser returns the string bewteen the parentheses as a valid link when it is not.
 
----
+<hr/>
 
 ## Code Change 3
 
