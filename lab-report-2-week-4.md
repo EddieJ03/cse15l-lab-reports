@@ -38,7 +38,7 @@ Here is the link to code change on GitHub: [link](https://github.com/EddieJ03/ma
 
 The the link to the file that caused the failure-inducing input is here: [file](https://raw.githubusercontent.com/EddieJ03/markdown-parse/main/test-file5.md)
 
-The symptom that this failure-inducing input gives is shown below:
+The symptom that this failure-inducing input gives is shown here:
 ![Image](./images/showissuetest5.png)
 
 The part of the **failure-inducing input** that results in the bug is the stand alone parentheses with a link inside it. The **bug** in the code is in line 70 where it does not consider whether the parenthese directly follow square brackets to determine if the URL is valid. The **symptom** that results from this bug is that `page.com` is considered as a valid URL in the markdown file which is incorrect.
