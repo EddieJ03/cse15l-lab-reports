@@ -63,6 +63,8 @@ As can be seen from the image, I was able to ssh into the remote server without 
 In this part my group and I brainstormed ways to more easily write a command that could copy a local java file to the remote server, compile that file, and run it. Using the idea of semicolons separating commands and needing to re-login after compiling, here is the command my group came up with: <br>
 `scp WhereAmI.java cs15lwi22anx@ieng6.ucsd.edu:~/; ssh cs15lwi22anx@ieng6.ucsd.edu javac WhereAmI.java; ssh cs15lwi22anx@ieng6.ucsd.edu java WhereAmI`
 
+The number of keystrokes this command took is 148.
+
 Here is a screenshot of the command working:
 ![Image](./images/scp-multi-commands.png)
 
