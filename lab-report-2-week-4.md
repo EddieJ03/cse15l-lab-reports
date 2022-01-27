@@ -21,7 +21,7 @@ The part of the **failure-inducing input** that results in the bug is the last s
 
 Here is the link to code change on GitHub: [link](https://github.com/EddieJ03/markdown-parse/commit/d4d957868986111536c6dfca88949eb8256d6d29)
 
-The the link to the file that caused the failure-inducing input is here: [file](./test-file2.md)
+The the link to the file that caused the failure-inducing input is here: ![file](https://raw.githubusercontent.com/EddieJ03/markdown-parse/main/test-file2.md)
 
 The symptom that this failure-inducing input gives is shown below:
 ![Image](./images/showissuetest2.png)
