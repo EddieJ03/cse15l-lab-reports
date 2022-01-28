@@ -2,7 +2,7 @@
 
 ## Code Change 1
 
-<img src="./images/issue2.png" alt="test2" width="3000"/>
+<img src="./images/issue2.png" alt="test2" width="1000px"/>
 
 Here is the link to code change on GitHub: [link](https://github.com/EddieJ03/markdown-parse/commit/d4d957868986111536c6dfca88949eb8256d6d29)
 
@@ -17,7 +17,7 @@ The part of the **failure-inducing input** that results in the bug is the last s
 
 ## Code Change 2
 
-<img src="./images/issue8.png" alt="test8" width="3000"/>
+<img src="./images/issue8.png" alt="test8" width="1000px"/>
 
 Here is the link to code change on GitHub: [link](https://github.com/EddieJ03/markdown-parse/commit/3d7fafa13d1632f54216240579a00f47b818a3a3)
 
@@ -32,7 +32,7 @@ The part of the **failure-inducing input** that results in the bug is that the s
 
 ## Code Change 3
 
-<img src="./images/issue5.png" alt="test5" width="3000"/>
+<img src="./images/issue5.png" alt="test5" width="1000px"/>
 
 Here is the link to code change on GitHub: [link](https://github.com/EddieJ03/markdown-parse/commit/9d484ecab8eed4f9a8b32db44eb6a5cf302dd54b)
 
