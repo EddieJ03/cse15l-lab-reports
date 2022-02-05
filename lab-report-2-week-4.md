@@ -19,7 +19,7 @@ some paragraph text after the links
 ```
 
 The symptom that this failure-inducing input gives is shown below:
-![Image](./images/showissuetest2.png)
+<img src="./images/showissuetest2.png" alt="test2" width="1500px"/>
 
 The part of the **failure-inducing input** that results in the bug is the last sequence of characters with no valid links. The **bug** in the code is that in each run of the while loop, the index where the parser starts looking for links continuously gets reset to 0. This is because in the last sequence of characters there exists no closing parenthesis so in the code the variable `closeParen` gets set to -1 and the line `currentIndex = closeParen + 1` resets currentIndex to 0. The **symptom** that results from this bug is an infinite loop which causes an out of memory error. 
 
