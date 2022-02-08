@@ -14,7 +14,7 @@ Here is me accessing the remote server using my alias.
 
 ## scp Using Alias
 
-<img src="./images/scpwithalias.png" alt="scp with alias" width="3000px"/>
+<img src="./images/scpwithalias.png" alt="scp with alias" width="750px"/>
 
 Here is my doing scp with the alias and showing the file actually appearing
-in the remote server.
+in the remote server. The file is named SCPStreamline.java.
