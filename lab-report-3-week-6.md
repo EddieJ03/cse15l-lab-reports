@@ -1,6 +1,6 @@
 # LAB REPORT 3
 
-In this lab report I will be showing how I successfulling streamlined my SSH configuration.
+In this lab report I will be showing how I successfully streamlined my SSH configuration.
 
 ## Editing the .ssh/config
 
