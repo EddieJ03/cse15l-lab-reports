@@ -6,7 +6,7 @@ In this lab report I will be showing how I successfully streamlined my SSH confi
 
 <img src="./images/editingsshconfig.png" alt="changing ssh" width="1500px"/>
 
-I edited th config file using VScode.
+I edited the config file using VScode.
 
 ## ssh With Alias
 
