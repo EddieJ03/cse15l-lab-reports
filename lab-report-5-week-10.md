@@ -25,7 +25,7 @@ block that needs fixing:
 int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
 int openParen = markdown.indexOf("(", nextCloseBracket);
 ```
-If `openParen` is not `nextCloseBracket + 1` then move `currentIndex` to `openParen + 1` and call `continue`. This is because the link is invalid so move `currenIndex` forward and search from there. 
+If `openParen` is not `nextCloseBracket + 1` then move `currentIndex` to `openParen + 1` and call `continue`. This is because the open parenthesis should be one index after the closing bracket in a valid link. The above code block does not consider this case so it takes `baz` to be a valid link.
 
 ## Second Test (File 577.md)
 
