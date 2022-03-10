@@ -43,7 +43,7 @@ The expected output thus should be `[]` since this is clearly an image and not a
 
 Therefore, my implementation is correct and the other implementation of `MarkdownParse.java` is wrong.
 
-To fix this issue for the other implementation is the code block that needs additions:
+To fix this issue this is the code block that needs attention:
 ```
 if(potentialLink.indexOf(" ") == -1 && potentialLink.indexOf("\n") == -1) {
     toReturn.add(potentialLink);
