@@ -15,9 +15,9 @@ Here are the contents of file `201.md`:
 [foo]
 ```
 
-If a markdown file is created with this code block it looks like this: <img src="./images/preview201.png" alt="mysnippet1" width="1500px"/>
+If a markdown file is created with the above markdown code it looks like this: <img src="./images/preview201.png" alt="mysnippet1" width="1500px"/>
 
-There are not link so the expected output should be `[]`. Thus, my implementation is correct. 
+There are no links so the expected output should be `[]`. Thus, my implementation is correct. 
 
 To fix the other `MarkdownParse.java` implementation, this is the code 
 block that needs fixing: 
