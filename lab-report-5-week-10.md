@@ -1,8 +1,8 @@
 # Lab Report 5
 
-## First Test (File 201.md)
+To find the test differences I used the `diff` command on the two `results.txt` files generated from separate runnings of the bash `for` loop for each `MarkdownParse.java` implementation.
 
-To find this difference I used the `diff` command on the two `results.txt` files generated from separate running of the bash `for` loop for my `MarkdownParse.java` implementation and the one in the other repository.
+## First Test (File 201.md)
 
 Here is my implementation output: <img src="./images/mymarkdown201.png" alt="mysnippet1" width="1500px"/>
 
@@ -28,8 +28,6 @@ int openParen = markdown.indexOf("(", nextCloseBracket);
 If `openParen` is not `nextCloseBracket + 1` then move `currentIndex` to `openParen + 1` and call `continue`. This is because the link is invalid so move `currenIndex` forward and search from there. 
 
 ## Second Test (File 577.md)
-
-To find this difference I used the `diff` command on the two `results.txt` files generated from separate running of the bash `for` loop for my `MarkdownParse.java` implementation and the one in the other repository.
 
 Here is my implementation output: <img src="./images/mymarkdown577.png" alt="mysnippet1" width="1500px"/>
 
